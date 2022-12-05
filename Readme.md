@@ -1,0 +1,1 @@
+height: Dimensions.get('window').height,
