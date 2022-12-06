@@ -16,11 +16,16 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
-import { Login } from './src/screen';
+import Routes from './src/routes';
+import { Home } from './src/screen';
+
+
+
 const App = () => {
 
   return (
-    <Login />
+  // <Routes/>
+  <Home/>
   );
 };
 
