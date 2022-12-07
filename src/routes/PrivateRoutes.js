@@ -1,10 +1,32 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import { Home } from '../screen'
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
+import Home from '../screen/Home'
+import Login from '../screen/Login'
+import Booking from '../screen/Booking'
+
+
+const Stack = createNativeStackNavigator()
 
 const PrivateRoutes = () => {
   return (
-   <Home/>
+   <Stack.Navigator initialRouteName='Login' >
+    <Stack.Screen
+    name="Login"
+    component={Login}
+    options={{headerShown:false}}
+    />
+    <Stack.Screen
+    name="Home"
+    component={Home}
+    options={{headerShown:false}}
+    />
+    <Stack.Screen  name="Booking" 
+    component={Booking}
+     options={{headerShown:false}}
+     />
+  
+  </Stack.Navigator>
   )
 }
 

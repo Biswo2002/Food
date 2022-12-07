@@ -1,7 +1,11 @@
 import { Button, Dimensions, ImageBackground, SafeAreaView, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
+import { useNavigation } from '@react-navigation/native'
 
 const Login = () => {
+
+    const navigation = useNavigation();
+
     return (
         <SafeAreaView>
             <View>
@@ -13,13 +17,15 @@ const Login = () => {
                     <View style={styles.SecondContainer}>
                         <Text style={styles.SubText}>Discover more than 120000 food recipies in your hands and cooking it easily!.</Text>
                     </View>
-                    <TouchableOpacity style={styles.Login}>
+                    <TouchableOpacity style={styles.Login}
+                        onPress={() => navigation.navigate('Home')}
+                    >
                         <Text style={styles.LoginText}>Login</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style={styles.SingUp}>
                         <Text style={styles.SignUpText}>Sign Up</Text>
                     </TouchableOpacity>
-                    
+
                 </ImageBackground>
             </View>
         </SafeAreaView>
@@ -46,40 +52,40 @@ const styles = StyleSheet.create({
     SecondContainer: {
         marginHorizontal: 35,
         width: 270,
-        paddingVertical:10
+        paddingVertical: 10
     },
     SubText: {
         fontSize: 17,
         color: 'gray',
     },
-    Login:{
-        borderWidth:1,
-        backgroundColor:'#27AE89',
-        marginHorizontal:35,
-        alignItems:"center",
-        height:60,
-        borderRadius:15,
-        marginTop:15,
+    Login: {
+        borderWidth: 1,
+        backgroundColor: '#27AE89',
+        marginHorizontal: 35,
+        alignItems: "center",
+        height: 60,
+        borderRadius: 15,
+        marginTop: 15,
     },
-    LoginText:{
-        color:'#fff',
-        padding:15,
-        fontSize:20,
-        fontWeight:'bold'
+    LoginText: {
+        color: '#fff',
+        padding: 15,
+        fontSize: 20,
+        fontWeight: 'bold'
     },
-    SingUp:{
-        borderWidth:1,
-        marginHorizontal:35,
-        alignItems:"center",
-        height:60,
-        borderRadius:15,
-        borderColor:'#27AE89',
-        marginVertical:15,
+    SingUp: {
+        borderWidth: 1,
+        marginHorizontal: 35,
+        alignItems: "center",
+        height: 60,
+        borderRadius: 15,
+        borderColor: '#27AE89',
+        marginVertical: 15,
     },
-    SignUpText:{
-        color:'#fff',
-        padding:15,
-        fontSize:20,
-        fontWeight:'bold'
+    SignUpText: {
+        color: '#fff',
+        padding: 15,
+        fontSize: 20,
+        fontWeight: 'bold'
     }
 })

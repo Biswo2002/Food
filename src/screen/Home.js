@@ -1,4 +1,4 @@
-import { Image, ImageBackground, SafeAreaView, StyleSheet, Text, TextInput, View , FlatList, TouchableOpacity} from 'react-native'
+import { Image, ImageBackground, SafeAreaView, StyleSheet, Text, TextInput, View, FlatList, TouchableOpacity } from 'react-native'
 import React from 'react'
 import AntDesign from 'react-native-vector-icons/AntDesign'
 import Ionicons from 'react-native-vector-icons/Ionicons'
@@ -6,51 +6,93 @@ import EvilIcons from 'react-native-vector-icons/EvilIcons';
 import Feather from 'react-native-vector-icons/Feather';
 import Entypo from 'react-native-vector-icons/Entypo';
 
+import { useNavigation } from '@react-navigation/native';
+
 const Recipe = [
   {
-    id:'R_1',
+    id: 'R_1',
     Name: 'Spaghettti with Shrimp sauce',
-    Pasta:'Pasta',
-    Image:require('../assets/image/T6.jpg'),
-    Title:'30 Mins | 1 Serving',
+    Pasta: 'Pasta',
+    Image: require('../assets/image/T6.jpg'),
+    Title: '30 Mins | 1 Serving',
+    Recipe: 'Biswopaban Nayak',
+    Coock: require('../assets/image/User3.jpg'),
+    RecipeName: 'Spaghetti with Shrimp Sauce',
+    User: require('../assets/image/User5.jpg'),
+    User1: require('../assets/image/User4.jpg'),
+    User2: require('../assets/image/User6.jpg'),
+    RNo:'126+',
+    Time: '30 min | 1 Serving',
+    Review: '126+ People Already Try This!',
+    item:'7 Items',
+
+    food:require('../assets/image/F.png'),
+    foodName:'Parmesan cheese',
+    foodGram:'300g',
+
+    food1:require('../assets/image/F1.png'),
+    foodName1:'Eggs',
+    foodGram1:'2 pcs',
+    
+    food2:require('../assets/image/F3.png'),
+    foodName2:'Fresh Shrimp',
+    foodGram2:'1/2 kg',
+
+    food3:require('../assets/image/F6.png'),
+    foodName3:'Patato',
+    foodGram3:'1/2 kg',
+
+    food4:require('../assets/image/F4.png'),
+    foodName4:'Chilli Sauce',
+    foodGram4:'4 Tbsp',
+
+    food5:require('../assets/image/F7.png'),
+    foodName5:'Tamato Ketchup',
+    foodGram5:'6Tbsp',
+
+    food6:require('../assets/image/F5.png'),
+    foodName6:'Onion',
+    foodGram6:'2 pcs',
   },
   {
-    id:'R_2',
+    id: 'R_2',
     Name: 'Zeera Rice With Dal & Chiken',
-    Pasta:'Plane',
-    Image:require('../assets/image/T4.jpg'),
-    Title:'40 Mins | 5 Serving',
+    Pasta: 'Plane',
+    Image: require('../assets/image/T4.jpg'),
+    Title: '40 Mins | 5 Serving',
   },
   {
-    id:'R_3',
+    id: 'R_3',
     Name: 'Chiken Fry with Chiken Pakoda ',
-    Pasta:'Pasta',
-    Image:require('../assets/image/T2.jpg'),
-    Title:'20 Mins | 10 Serving',
+    Pasta: 'Pasta',
+    Image: require('../assets/image/T2.jpg'),
+    Title: '20 Mins | 10 Serving',
   },
   {
-    id:'R_4',
+    id: 'R_4',
     Name: 'Spaghettti with Shrimp sauce',
-    Pasta:'Pasta',
-    Image:require('../assets/image/T1.jpg'),
-    Title:'30 Mins | 1 Serving',
+    Pasta: 'Pasta',
+    Image: require('../assets/image/T1.jpg'),
+    Title: '30 Mins | 1 Serving',
   },
   {
-    id:'R_5',
+    id: 'R_5',
     Name: 'Zeera Rice With Dal & Chiken',
-    Pasta:'Plane',
-    Image:require('../assets/image/T3.jpg'),
-    Title:'40 Mins | 5 Serving',
+    Pasta: 'Plane',
+    Image: require('../assets/image/T3.jpg'),
+    Title: '40 Mins | 5 Serving',
   },
   {
-    id:'R_6s',
+    id: 'R_6s',
     Name: 'Chiken Fry with Chiken Pakoda ',
-    Pasta:'Pasta',
-    Image:require('../assets/image/T5.jpg'),
-    Title:'20 Mins | 10 Serving',
+    Pasta: 'Pasta',
+    Image: require('../assets/image/T5.jpg'),
+    Title: '20 Mins | 10 Serving',
   }
 ]
 const Home = () => {
+  const navigation = useNavigation();
+
   return (
     <SafeAreaView style={styles.Main}>
       <View style={styles.FirstContainer}>
@@ -75,7 +117,7 @@ const Home = () => {
           <Text style={styles.recipes}>you haven't tried yrt</Text>
           <TouchableOpacity>
             <Text style={styles.Recipes}>See Recipes</Text>
-            </TouchableOpacity>
+          </TouchableOpacity>
         </View>
       </View>
       <View style={styles.RecipesText}>
@@ -83,46 +125,48 @@ const Home = () => {
       </View>
       <View style={styles.SecondContainer}>
         <FlatList
-        data={Recipe}
-        showsHorizontalScrollIndicator={false}
-        horizontal={true}
-        renderItem={({item}) =>(
-        <ImageBackground
-          source={item?.Image}
-          style={styles.ImageBackground}
-          imageStyle={{ borderRadius: 15 }} >
-          <View style={styles.PastaContainer}>
-            <Text style={styles.Pasta}>{item?.Pasta}</Text>
-          </View>
-          <View style={styles.Name}>
-            <View style={styles.RecipeName}>
-              <Text style={styles.Spaghettti}> {item?.Name} </Text>
-              <Ionicons name='bookmark' size={20} color='#12947C' />
-            </View>
-              <Text  style={styles.TimeContainer}> {item?.Title} </Text>
-          </View>
-        </ImageBackground>
-   ) }
+          data={Recipe}
+          showsHorizontalScrollIndicator={false}
+          horizontal={true}
+          renderItem={({ item }) => (
+            <TouchableOpacity onPress={() => navigation.navigate('Booking', { RECIPE: item })}>
+              <ImageBackground
+                source={item?.Image}
+                style={styles.ImageBackground}
+                imageStyle={{ borderRadius: 15 }} >
+                <View style={styles.PastaContainer}>
+                  <Text style={styles.Pasta}>{item?.Pasta}</Text>
+                </View>
+                <View style={styles.Name}>
+                  <View style={styles.RecipeName}>
+                    <Text style={styles.Spaghettti}> {item?.Name} </Text>
+                    <Ionicons name='bookmark' size={20} color='#12947C' />
+                  </View>
+                  <Text style={styles.TimeContainer}> {item?.Title} </Text>
+                </View>
+              </ImageBackground>
+            </TouchableOpacity>
+          )}
         />
       </View>
       <View style={styles.ButtomText}>
         <Text style={styles.Categories}>Categories</Text>
         <TouchableOpacity>
-        <Text style={styles.ViewAll}>View All</Text>
+          <Text style={styles.ViewAll}>View All</Text>
         </TouchableOpacity>
       </View>
       <View style={styles.icons}>
         <TouchableOpacity>
-        <Entypo name='home' size={30} color={'#509a8f'}/>
+          <Entypo name='home' size={30} color={'#509a8f'} />
         </TouchableOpacity>
         <TouchableOpacity>
-        <EvilIcons name="search" size={30}/>
+          <EvilIcons name="search" size={30} />
         </TouchableOpacity>
         <TouchableOpacity>
-        <Entypo name="bookmark" size={30}/>
+          <Entypo name="bookmark" size={30} />
         </TouchableOpacity>
         <TouchableOpacity>
-        <Feather name='settings' size={30}/>
+          <Feather name='settings' size={30} />
         </TouchableOpacity>
       </View>
     </SafeAreaView>
@@ -219,7 +263,7 @@ const styles = StyleSheet.create({
   ImageBackground: {
     width: 230,
     height: 320,
-    marginHorizontal:10
+    marginHorizontal: 10
   },
   PastaContainer: {
     backgroundColor: '#6A6A70',
@@ -237,43 +281,43 @@ const styles = StyleSheet.create({
   },
   Name: {
     backgroundColor: '#262827',
-    borderRadius:10,
+    borderRadius: 10,
     marginTop: 160,
     marginHorizontal: 10,
-    height:105,
+    height: 105,
   },
   RecipeName: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginHorizontal:10,
+    marginHorizontal: 10,
   },
   TimeContainer: {
     paddingTop: 20,
-    marginHorizontal:10,
-    color:'#fff',
+    marginHorizontal: 10,
+    color: '#fff',
   },
   Spaghettti: {
     fontSize: 18,
     width: 160,
     color: '#fff',
-    fontWeight:'bold',
-    paddingTop:10,
+    fontWeight: 'bold',
+    paddingTop: 10,
   },
-  ButtomText:{
-    flexDirection:'row',
-    justifyContent:'space-between',
-    marginHorizontal:25,
-    marginVertical:20,
+  ButtomText: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginHorizontal: 25,
+    marginVertical: 20,
   },
-  Categories:{
-    fontSize:20,
-    fontWeight:'bold',
-    color:'#000',
+  Categories: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: '#000',
   },
-  icons:{
-    flexDirection:'row',
-    justifyContent:'space-around',
-    marginTop:20,
+  icons: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    marginTop: 20,
   }
 })
