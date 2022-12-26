@@ -60,6 +60,44 @@ const Recipe = [
     Pasta: 'Plane',
     Image: require('../assets/image/T4.jpg'),
     Title: '40 Mins | 5 Serving',
+     Recipe: 'Biswopaban Nayak',
+    Coock: require('../assets/image/User3.jpg'),
+    RecipeName: 'Spaghetti with Shrimp Sauce',
+    User: require('../assets/image/User5.jpg'),
+    User1: require('../assets/image/User4.jpg'),
+    User2: require('../assets/image/User6.jpg'),
+    RNo:'126+',
+    Time: '30 min | 1 Serving',
+    Review: '126+ People Already Try This!',
+    item:'7 Items',
+
+    food:require('../assets/image/F.png'),
+    foodName:'Parmesan cheese',
+    foodGram:'300g',
+
+    food1:require('../assets/image/F1.png'),
+    foodName1:'Eggs',
+    foodGram1:'2 pcs',
+    
+    food2:require('../assets/image/F3.png'),
+    foodName2:'Fresh Shrimp',
+    foodGram2:'1/2 kg',
+
+    food3:require('../assets/image/F6.png'),
+    foodName3:'Patato',
+    foodGram3:'1/2 kg',
+
+    food4:require('../assets/image/F4.png'),
+    foodName4:'Chilli Sauce',
+    foodGram4:'4 Tbsp',
+
+    food5:require('../assets/image/F7.png'),
+    foodName5:'Tamato Ketchup',
+    foodGram5:'6Tbsp',
+
+    food6:require('../assets/image/F5.png'),
+    foodName6:'Onion',
+    foodGram6:'2 pcs',
   },
   {
     id: 'R_3',
@@ -67,6 +105,44 @@ const Recipe = [
     Pasta: 'Pasta',
     Image: require('../assets/image/T2.jpg'),
     Title: '20 Mins | 10 Serving',
+     Recipe: 'Biswopaban Nayak',
+    Coock: require('../assets/image/User3.jpg'),
+    RecipeName: 'Spaghetti with Shrimp Sauce',
+    User: require('../assets/image/User5.jpg'),
+    User1: require('../assets/image/User4.jpg'),
+    User2: require('../assets/image/User6.jpg'),
+    RNo:'126+',
+    Time: '30 min | 1 Serving',
+    Review: '126+ People Already Try This!',
+    item:'7 Items',
+
+    food:require('../assets/image/F.png'),
+    foodName:'Parmesan cheese',
+    foodGram:'300g',
+
+    food1:require('../assets/image/F1.png'),
+    foodName1:'Eggs',
+    foodGram1:'2 pcs',
+    
+    food2:require('../assets/image/F3.png'),
+    foodName2:'Fresh Shrimp',
+    foodGram2:'1/2 kg',
+
+    food3:require('../assets/image/F6.png'),
+    foodName3:'Patato',
+    foodGram3:'1/2 kg',
+
+    food4:require('../assets/image/F4.png'),
+    foodName4:'Chilli Sauce',
+    foodGram4:'4 Tbsp',
+
+    food5:require('../assets/image/F7.png'),
+    foodName5:'Tamato Ketchup',
+    foodGram5:'6Tbsp',
+
+    food6:require('../assets/image/F5.png'),
+    foodName6:'Onion',
+    foodGram6:'2 pcs',
   },
   {
     id: 'R_4',
@@ -74,6 +150,44 @@ const Recipe = [
     Pasta: 'Pasta',
     Image: require('../assets/image/T1.jpg'),
     Title: '30 Mins | 1 Serving',
+     Recipe: 'Biswopaban Nayak',
+    Coock: require('../assets/image/User3.jpg'),
+    RecipeName: 'Spaghetti with Shrimp Sauce',
+    User: require('../assets/image/User5.jpg'),
+    User1: require('../assets/image/User4.jpg'),
+    User2: require('../assets/image/User6.jpg'),
+    RNo:'126+',
+    Time: '30 min | 1 Serving',
+    Review: '126+ People Already Try This!',
+    item:'7 Items',
+
+    food:require('../assets/image/F.png'),
+    foodName:'Parmesan cheese',
+    foodGram:'300g',
+
+    food1:require('../assets/image/F1.png'),
+    foodName1:'Eggs',
+    foodGram1:'2 pcs',
+    
+    food2:require('../assets/image/F3.png'),
+    foodName2:'Fresh Shrimp',
+    foodGram2:'1/2 kg',
+
+    food3:require('../assets/image/F6.png'),
+    foodName3:'Patato',
+    foodGram3:'1/2 kg',
+
+    food4:require('../assets/image/F4.png'),
+    foodName4:'Chilli Sauce',
+    foodGram4:'4 Tbsp',
+
+    food5:require('../assets/image/F7.png'),
+    foodName5:'Tamato Ketchup',
+    foodGram5:'6Tbsp',
+
+    food6:require('../assets/image/F5.png'),
+    foodName6:'Onion',
+    foodGram6:'2 pcs',
   },
   {
     id: 'R_5',
@@ -81,6 +195,44 @@ const Recipe = [
     Pasta: 'Plane',
     Image: require('../assets/image/T3.jpg'),
     Title: '40 Mins | 5 Serving',
+     Recipe: 'Biswopaban Nayak',
+    Coock: require('../assets/image/User3.jpg'),
+    RecipeName: 'Spaghetti with Shrimp Sauce',
+    User: require('../assets/image/User5.jpg'),
+    User1: require('../assets/image/User4.jpg'),
+    User2: require('../assets/image/User6.jpg'),
+    RNo:'126+',
+    Time: '30 min | 1 Serving',
+    Review: '126+ People Already Try This!',
+    item:'7 Items',
+
+    food:require('../assets/image/F.png'),
+    foodName:'Parmesan cheese',
+    foodGram:'300g',
+
+    food1:require('../assets/image/F1.png'),
+    foodName1:'Eggs',
+    foodGram1:'2 pcs',
+    
+    food2:require('../assets/image/F3.png'),
+    foodName2:'Fresh Shrimp',
+    foodGram2:'1/2 kg',
+
+    food3:require('../assets/image/F6.png'),
+    foodName3:'Patato',
+    foodGram3:'1/2 kg',
+
+    food4:require('../assets/image/F4.png'),
+    foodName4:'Chilli Sauce',
+    foodGram4:'4 Tbsp',
+
+    food5:require('../assets/image/F7.png'),
+    foodName5:'Tamato Ketchup',
+    foodGram5:'6Tbsp',
+
+    food6:require('../assets/image/F5.png'),
+    foodName6:'Onion',
+    foodGram6:'2 pcs',
   },
   {
     id: 'R_6s',
@@ -88,6 +240,44 @@ const Recipe = [
     Pasta: 'Pasta',
     Image: require('../assets/image/T5.jpg'),
     Title: '20 Mins | 10 Serving',
+     Recipe: 'Biswopaban Nayak',
+    Coock: require('../assets/image/User3.jpg'),
+    RecipeName: 'Spaghetti with Shrimp Sauce',
+    User: require('../assets/image/User5.jpg'),
+    User1: require('../assets/image/User4.jpg'),
+    User2: require('../assets/image/User6.jpg'),
+    RNo:'126+',
+    Time: '30 min | 1 Serving',
+    Review: '126+ People Already Try This!',
+    item:'7 Items',
+
+    food:require('../assets/image/F.png'),
+    foodName:'Parmesan cheese',
+    foodGram:'300g',
+
+    food1:require('../assets/image/F1.png'),
+    foodName1:'Eggs',
+    foodGram1:'2 pcs',
+    
+    food2:require('../assets/image/F3.png'),
+    foodName2:'Fresh Shrimp',
+    foodGram2:'1/2 kg',
+
+    food3:require('../assets/image/F6.png'),
+    foodName3:'Patato',
+    foodGram3:'1/2 kg',
+
+    food4:require('../assets/image/F4.png'),
+    foodName4:'Chilli Sauce',
+    foodGram4:'4 Tbsp',
+
+    food5:require('../assets/image/F7.png'),
+    foodName5:'Tamato Ketchup',
+    foodGram5:'6Tbsp',
+
+    food6:require('../assets/image/F5.png'),
+    foodName6:'Onion',
+    foodGram6:'2 pcs',
   }
 ]
 const Home = () => {
